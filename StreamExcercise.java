@@ -44,7 +44,7 @@ public class StreamExcercise {
         //System.out.println(filtered.stream().collect(Collectors.toList()));
         
         
-        System.out.println(students.entrySet().stream().sorted(Map.Entry.comparingByKey()).filter(e -> students.get(e)>60).collect(Collectors.toList()));
+        System.out.println(students.entrySet().stream().filter(e -> e.getValue()>60).sorted(Map.Entry.comparingByKey()).collect(Collectors.toList()));
     }
     
 }
